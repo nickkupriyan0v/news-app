@@ -1,10 +1,10 @@
 import { createRoot } from 'react-dom/client';
-import App from './app/App.tsx';
 import './app/styles/index.scss';
-import { ThemeProvider } from '~app/providers/ThemeProvider/index.ts';
+import { RoutesProvider } from '~app/providers/RoutesProvider';
+import { ThemeProvider } from '~app/providers/ThemeProvider';
 
 createRoot(document.getElementById('root')!).render(
     <ThemeProvider>
-        <App />
+        <RoutesProvider />
     </ThemeProvider>
 );
