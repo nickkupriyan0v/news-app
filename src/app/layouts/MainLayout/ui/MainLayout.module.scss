@@ -1,0 +1,12 @@
+.mainLayout {
+    display: grid;
+    grid-template-rows:
+        var(--header-height) calc(
+            100dvh - var(--header-height) - var(--footer-height)
+        )
+        var(--footer-height);
+
+    main {
+        overflow: auto;
+    }
+}
