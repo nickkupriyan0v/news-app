@@ -1,0 +1,12 @@
+@import 'reset.scss';
+@import 'variables/global';
+@import 'themes/light';
+@import 'themes/dark.scss';
+
+#root {
+    background: var(--bg-color);
+    font: var(--font-m);
+    color: var(--font-color);
+
+    min-height: 100vh;
+}

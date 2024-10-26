@@ -1,5 +1,14 @@
+import { useTheme } from './providers/ThemeProvider';
+
 const App = () => {
-  return <div>App</div>;
+    const { toggleTheme } = useTheme();
+
+    return (
+        <div>
+            application
+            <button onClick={() => toggleTheme()}>toggleTheme</button>
+        </div>
+    );
 };
 
 export default App;
