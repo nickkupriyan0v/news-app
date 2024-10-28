@@ -6,7 +6,9 @@ export const Header = () => {
     const { toggleTheme } = useTheme();
     return (
         <div className={s.header}>
-            <div>
+            <div>LOGO</div>
+
+            <div className={s.nav}>
                 <Link to={'/'}>Home</Link>
                 <Link to={'/feed'}>Feed</Link>
                 <Link to={'/profile'}>Profile</Link>
