@@ -9,6 +9,9 @@
     --font-line-l: 32px;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
-    --header-height: 100px;
-    --footer-height: 100px;
+    // sizes
+    --header-height: 60px;
+    --footer-height: 60px;
+    --sidebar-width: 300px;
+    --main-space-width: 640px;
 }
