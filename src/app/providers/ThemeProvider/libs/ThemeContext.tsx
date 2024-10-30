@@ -1,7 +1,8 @@
 import { createContext } from 'react';
+import { Theme } from '../models/theme.enum';
 
 interface ThemeContextType {
-    theme: boolean;
-    toggleTheme: () => void;
+    theme?: Theme;
+    setTheme?: (theme: Theme) => void;
 }
-export const ThemeContext = createContext<ThemeContextType | null>(null);
+export const ThemeContext = createContext<ThemeContextType>({});

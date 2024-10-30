@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import s from './Header.module.scss';
-import { useTheme } from '~app/providers/ThemeProvider';
+import { Theme, useTheme } from '~app/providers/ThemeProvider';
 
 export const Header = () => {
     const { toggleTheme } = useTheme();
@@ -15,7 +15,9 @@ export const Header = () => {
                 <Link to={'/saved'}>Saved</Link>
             </div>
 
-            <button onClick={toggleTheme}>toggle theme</button>
+            <button onClick={() => toggleTheme(Theme.Dark)}>dark</button>
+            <button onClick={() => toggleTheme(Theme.Light)}>light</button>
+            <button onClick={() => toggleTheme(Theme.Purple)}>purple</button>
         </div>
     );
 };
