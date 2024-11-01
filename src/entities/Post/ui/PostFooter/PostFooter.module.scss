@@ -1,0 +1,21 @@
+.postFooter {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+    .footerItem {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--font-color-secondary);
+
+        span {
+            font-size: 12px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: var(--font-color-active);
+        }
+    }
+}
