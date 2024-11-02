@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import s from './Feed.module.scss';
 import { Post } from '~entities/Post';
 
@@ -6,7 +7,7 @@ export const Feed = () => {
     return (
         <div className={s.newsList}>
             {newsList.map((item) => (
-                <div key={item.id}>
+                <div key={item.id} className={s.postLink}>
                     <Post />
                 </div>
             ))}

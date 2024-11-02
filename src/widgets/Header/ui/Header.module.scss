@@ -1,16 +1,25 @@
 .header {
     background-color: var(--primary-bg-color);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
+    .headerWrapper {
+        width: 1000px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        .nav {
+            flex: 1;
+        }
 
-    gap: 12px;
+        .nav,
+        .thmeSwitcher {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 12px;
+        }
+    }
 }

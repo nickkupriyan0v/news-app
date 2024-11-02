@@ -7,19 +7,30 @@ export const Header = () => {
     const { toggleTheme } = useTheme();
     return (
         <div className={s.header}>
-            <div>LOGO</div>
+            <div className={s.headerWrapper}>
+                <Link to={'/'}>
+                    <div>LOGO</div>
+                </Link>
 
-            <div className={s.nav}>
-                <Link to={'/asdas'}>Home</Link>
-                <Link to={'/feed'}>Feed</Link>
-                <Link to={'/saved'}>Saved</Link>
+                <div className={s.nav}>
+                    <Link to={'/'}>Feed</Link>
+                    <Link to={'/saved'}>Saved</Link>
+                </div>
+
+                <div className={s.thmeSwitcher}>
+                    <button onClick={() => toggleTheme(Theme.Dark)}>
+                        dark
+                    </button>
+                    <button onClick={() => toggleTheme(Theme.Light)}>
+                        light
+                    </button>
+                    <button onClick={() => toggleTheme(Theme.Purple)}>
+                        purple
+                    </button>
+                </div>
+
+                <UserAvatar />
             </div>
-
-            <button onClick={() => toggleTheme(Theme.Dark)}>dark</button>
-            <button onClick={() => toggleTheme(Theme.Light)}>light</button>
-            <button onClick={() => toggleTheme(Theme.Purple)}>purple</button>
-
-            <UserAvatar />
         </div>
     );
 };
