@@ -10,33 +10,27 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout />,
-        errorElement: <NotFound />,
         children: [
             {
-                errorElement: <NotFound />,
-                children: [
-                    {
-                        path: '*',
-                        element: <NotFound />,
-                    },
-                    {
-                        path: '/',
-                        element: <Feed />,
-                        index: true,
-                    },
-                    {
-                        path: '/profile',
-                        element: <Profile />,
-                    },
-                    {
-                        path: '/saved',
-                        element: <Saved />,
-                    },
-                    {
-                        path: '/post/:id',
-                        element: <PostPage />,
-                    },
-                ],
+                path: '*',
+                element: <NotFound />,
+            },
+            {
+                path: '/',
+                element: <Feed />,
+                index: true,
+            },
+            {
+                path: '/profile',
+                element: <Profile />,
+            },
+            {
+                path: '/saved',
+                element: <Saved />,
+            },
+            {
+                path: '/post/:id',
+                element: <PostPage />,
             },
         ],
     },

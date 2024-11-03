@@ -1,3 +1,5 @@
 .postPage {
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
 }
