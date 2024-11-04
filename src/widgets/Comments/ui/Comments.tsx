@@ -5,7 +5,6 @@ export const Comments = () => {
     return (
         <Card>
             <div className={s.comments}>
-                Comments
                 {[1, 2, 3].map((item) => (
                     <div key={item}>
                         <Comment />

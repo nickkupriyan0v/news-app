@@ -29,6 +29,8 @@ export const Header = () => {
                     </button>
                 </div>
 
+                <Link to={'/new-post'}>New Post</Link>
+
                 <UserAvatar />
             </div>
         </div>

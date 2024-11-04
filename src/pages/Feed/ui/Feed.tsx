@@ -7,9 +7,13 @@ export const Feed = () => {
     return (
         <div className={s.newsList}>
             {newsList.map((item) => (
-                <div key={item.id} className={s.postLink}>
+                <Link
+                    key={item.id}
+                    className={s.postLink}
+                    to={`post/${item.id}`}
+                >
                     <Post />
-                </div>
+                </Link>
             ))}
         </div>
     );
